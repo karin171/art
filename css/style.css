@@ -1,0 +1,356 @@
+*{margin: 0px; padding: 0px;}
+@font-face {
+	font-family: 'Lato Light';
+	src: url('../fonts/lato_light.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/lato_light.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/lato_light.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/lato_light.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/lato_light.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/lato_light.svg#lato_light') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Catorze27Style1-SemiBold';
+	src: url('../fonts/catorze27style1-semibold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/catorze27style1-semibold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/catorze27style1-semibold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/catorze27style1-semibold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/catorze27style1-semibold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/catorze27style1-semibold.svg#catorze27style1-semibold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+	font-family: 'Bebas Neue Bold';
+	src: url('../fonts/bebas_neue_bold.eot'); /* IE 9 Compatibility Mode */
+	src: url('../fonts/bebas_neue_bold.eot?#iefix') format('embedded-opentype'), /* IE < 9 */
+		url('../fonts/bebas_neue_bold.woff2') format('woff2'), /* Super Modern Browsers */
+		url('../fonts/bebas_neue_bold.woff') format('woff'), /* Firefox >= 3.6, any other modern browser */
+		url('../fonts/bebas_neue_bold.ttf') format('truetype'), /* Safari, Android, iOS */
+		url('../fonts/bebas_neue_bold.svg#bebas_neue_bold') format('svg'); /* Chrome < 4, Legacy iOS */
+}
+@font-face {
+    font-family: 'URW Bernhard Gothic';
+    src: local('URW Bernhard Gothic Medium'), local('URW-Bernhard-Gothic-Medium'),
+        url('BernhardGothicURW-Medium.woff2') format('woff2'),
+        url('BernhardGothicURW-Medium.woff') format('woff'),
+        url('BernhardGothicURW-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+}
+.header{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.nav li{
+    color: white;
+    font-family: 'Lato Light', Arial, sans-serif;
+    font-size: 130%;
+    font-weight: 600;
+    display: inline;
+    text-align: center;
+    padding: 0 35px;
+}
+.nav a{
+    text-decoration: none;
+    color: white;
+}
+.nav li:hover{
+    text-shadow: 2px 2px 10px whitesmoke;
+}
+.nav a:active{
+    color: blueviolet;
+}
+.nav button{
+    background-color: rgb(137, 11, 255);
+    color: white;
+    padding: 8px 40px;
+    border-radius: 10px;
+    border: 1px solid rgb(137, 11, 255);
+    font-family: 'Lato Light', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 100%;
+}
+button:hover{
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.89);
+}
+.main{
+    width: 100%;
+    height: 1800px;
+    background: rgb(60,31,86);
+    background: radial-gradient(circle, rgba(60,31,86,1) 2%, rgba(46,23,66,1) 24%, rgba(13,4,20,1) 56%, rgba(12,1,21,1) 74%, rgba(19,1,35,1) 100%);
+}
+.container{
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.block{
+    padding: 50px 100px 0 50px;
+}
+.main_text{
+    padding: 180px 120px 0 80px;
+}
+.text12{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.text11 h1, .text12 .text2 h1{
+    color: white;
+    font-family: 'URW-Bernhard-Gothic-Medium', sans-serif;
+    font-weight: bold;
+    font-size: 360%;
+    text-shadow: 0 0 5px rgba(228, 228, 228, 0.842);
+}
+.gradient-text{
+	color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(-180deg, rgb(144, 0, 255), rgb(255, 0, 119));
+    font-family: 'Nimbus Sans Extd Bold', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 200%;
+}
+.text13{
+    padding: 10px 0 40px;
+    color: rgba(226, 226, 226, 0.938);
+    text-shadow: 0 0 7px rgba(228, 228, 228, 0.842);
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; 
+    font-size: 130%;
+    line-height: 45px;
+    word-spacing: 8px;
+}
+.main_text .btn button{
+    background-color: rgb(137, 11, 255);
+    color: white;
+    padding: 12px 45px;
+    border-radius: 10px;
+    border: 1px solid rgb(137, 11, 255);
+    font-family: 'Lato Light', Arial, sans-serif;
+    font-weight: bolder;
+    font-size: 120%;
+}
+.main_text .text14{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    justify-content: flex-start;
+    margin-left: -50px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+    text-align: center;
+}
+.main_text .text14 h2{
+    font-size: 250%;
+    font-family: monospace;
+}
+.main_text .text14 p{
+    color: rgba(233, 233, 233, 0.705);
+}
+.text11 h2{
+    color: white;
+    font-family: 'URW-Bernhard-Gothic-Medium', sans-serif;
+    font-weight: lighter;
+    font-size: 270%;
+    margin-top: 100px;
+    word-spacing: 7px;
+    text-shadow: 0 0 5px rgba(228, 228, 228, 0.842);
+}
+.trading{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    padding: 50px 165px;
+}
+.block1{
+    margin-top: 30px;
+    color: white;
+    width: 360px;
+    height: 300px;
+    background-color: rgb(71, 53, 92);
+    box-shadow: 2px 2px 20px black;
+    border-radius: 20px;
+    display: flex;
+    align-items: flex-end;    
+    font-family: 'URW-Bernhard-Gothic-Medium', sans-serif;
+    margin: 10px;
+}
+.block12{
+    border-radius: 0 0 20px 20px;
+    width: 100%;
+    height: 130px;
+    background: rgb(48,23,70);
+    background: radial-gradient(circle, rgba(48,23,70,1) 27%, rgba(38,17,57,1) 94%);
+}
+.circle{
+    border-radius: 100%;
+    width: 5px;
+    height: 5px;
+    background-color: chartreuse;
+    margin-top: 5px;
+}
+.block1 .line{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+}
+.block1 .line p{
+    padding: 10px 10px 5px 30px;
+    color: rgba(202, 202, 202, 0.938);
+    text-shadow: 0 0 2px rgba(228, 228, 228, 0.842);
+}
+.block12 .line2 h4{
+    font-family: 'URW-Bernhard-Gothic-Medium', sans-serif;
+    font-weight: lighter;
+    padding: 4px 0 8px 30px;
+    text-shadow: 0 0 3px rgba(228, 228, 228, 0.842);
+    color: rgba(235, 235, 235, 0.973);
+}
+.block13{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.block132 h4, .block131 h4{
+    padding: 4px 0 0 0;
+}
+.retro{
+    background: url(../img/retro.jpg);
+    background-size: contain;
+}
+.vave{
+    background: url(../img/vave.jpg);
+    background-size: contain;
+}
+.kyber{
+    background: url(../img/kyber.jpg);
+    background-size: contain;
+}
+.ice{
+    background: url(../img/ice.jpg);
+    background-size: contain;
+}
+.woman{
+    background: url(../img/woman.jpg);
+    background-size: contain;
+}
+.boy{
+    background: url(../img/boy.jpg);
+    background-size: contain;
+}
+.footer{
+    width: 1115px;
+    height: 100px;
+    background: rgb(48,23,70);
+    background: radial-gradient(circle, rgba(48,23,70,1) 27%, rgba(38,17,57,1) 94%);
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 2px 2px 20px black;   
+}
+.footer li{
+    display: inline;
+    list-style-type: none;
+    padding: 10px 50px;
+    color: white;
+    font-family: 'Lato Light', Arial, sans-serif;
+    font-size: 150%;
+    font-weight: 600;
+}
+
+@media screen and (min-device-width: 300px) and (max-device-width: 500px){
+    *{margin: 0px !important; padding: 0px !important;}
+    .header{
+        height: 50px;
+    }
+    .nav li{
+        padding: 5px 8px !important;
+        font-size: 80%;
+    }
+    .nav button{
+        padding: 3px 10px !important;
+        font-size: 90%;
+    }    
+    .main{
+        height: 1500px;
+    }
+    .block{
+        padding: 15px 10px 20px 0 !important;
+    }
+    .main_text{
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        padding: 40px 50px !important;
+    }
+    .text11 h1, .text12 .text2 h1{
+        font-size: 170%;
+    }
+    .gradient-text{
+        font-size: 85%;
+    }
+    .text13{
+        padding: 15px 0 25px !important;
+        font-size: 110%;
+        line-height: 20px;
+    }
+    .main_text .btn button{
+        padding: 3px 15px !important;
+        font-size: 90%;
+    }
+    .main_text .text14{
+        padding: 20px 0 !important;
+    }
+    .main_text .text14 h2{
+        font-size: 150%;
+    }                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     
+    .text11 h2{
+        font-size: 130%;
+        word-spacing: 5px;
+    }
+    .astronaut img{
+        width: 250px;
+        height: 370px;
+    }
+    .trading{
+        padding: 10px 0 0 10px !important;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+    }
+    .block1{ 
+        width: 160px;
+        height: 140px;
+    }
+    .block12{
+        width: 100%;
+        height: 50px;
+    }
+    .circle{
+        margin: 1px 0 0 2px !important;
+        width: 3px;
+        height: 3px;
+    }
+    .block12, .line, .line2, .block13{
+        font-size: 78%;
+    }
+    .line, .line2{
+        padding-left: 3px !important;
+    }
+    .footer{
+        margin-top: 40px !important;
+        width: 300px;
+        height: 100px;
+    }
+    .footer li{
+        font-size: 90%;
+        padding: 10px !important;
+    }
+}
